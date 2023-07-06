@@ -3,11 +3,14 @@
 
 :root {
     --background: #65a18e;
-    --nav-bng: #375c51;
+    --decoration-btn: #375c51;
+    --nav-bng: #5c9382;
     --details-oscuro: #0C3429;
     --details-intermedio: #00BD82;
     --details-claro: #00FFB0;
     --background-titles: #58949c;
+    --nav-dis: #35554b;
+
     /* TEXTS */
     --text-importante: #0a2f2a;
     --text-nav: #8fe6f1;
@@ -25,7 +28,7 @@
     box-sizing: border-box; 
 }
 header {
-    background: var(--nav-bng);
+    background: linear-gradient(to bottom, var(--nav-dis),var(--nav-bng), var(--background));
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -33,12 +36,15 @@ header {
     align-items: center;
     height: 70px;
     padding: 0px 30px 0px 30px;
-
+    position: fixed;
+    top: 0;
+    z-index: 1;
 
 }
 .logo {
     height: 90%;
 }
+
 .navbar,
 .navbar-list {
     display: flex;
@@ -52,21 +58,33 @@ header {
     gap: 20px
 }
 .navbar-list a {
-    color: var(--text-nav);
-    font-size: 14px;
+    color: var(--nav-dis);
+    font-size: 15px;
+    font-weight: 500;
 }
-.navbar-list li:nth-child(1) a {
+
+.navbar i {
+    font-size: 36px;
+    color: var(--text-nav);
+    display: none;
+}
+#toggle-menu {
+    display: none;
+}
+ 
+/* .navbar-list li:nth-child(1) a {
     color: var(--text-white);
     font-weight: 600;
-}
-.cart-icon {
+} */
+
+/* .cart-icon {
     height: 35px;
     font-weight: 600;
     width: 100%;
     padding: 5px 10px;
     color: var(--text-white);
     cursor: pointer;
-}
+ } */
 /* main */
 main {
     background: var(--background);
@@ -83,6 +101,7 @@ main {
     justify-content: space-around;
     /* align-items: center; */
     width: 90%;
+    margin-top: 70px;
 }
 .hero-info {
     display: flex;
@@ -91,7 +110,11 @@ main {
     gap: 20px;
 }
 .hero-info h1 {
-    color: var(--text-white);
+    /* color: var(--text-white); */
+    background: linear-gradient(to bottom, var(--nav-dis),var(--nav-bng), var(--text-pastel) );
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
     font-weight: 800;
     font-size: 40px;
     /* display: flex;
@@ -116,12 +139,12 @@ main {
 }
 .primary-btn {
     color: var(--text-nav);
-    background-color: var(--nav-bng);
+    background-color: var(--decoration-btn);
     width: 120px;
     font-size: 14px;
 }
 .alt-btn {
-    color: var(--nav-bng);
+    color: var(--decoration-btn);
     background-color: var(--text-nav);
     width: 120px;
     font-size: 14px;
@@ -145,5 +168,55 @@ main {
 }
 .about-info p {
     font-weight: 600;
+    color: var(--text-pastel);
+}
+
+#cards {
+    padding: 70px 0px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+
+}
+
+.cards-style {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.cards-x3 {
+    width: 300px;
+    height: auto;
+    padding: 2px 12px 2px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--decoration-btn);
+    border-radius: 30px;
+    gap: 20px;
+}
+
+.cards-x3 img {
+    width: 250px;
+    border-radius: 10px;
+
+}
+.cards-x3 h3 {
+    font-weight: 800;
+    font-size: 30px;
+    background: linear-gradient(to bottom, var(--nav-dis),var(--nav-bng), var(--text-pastel) );
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.cards-x3 p {
+    font-weight: 500;
     color: var(--text-pastel);
 }

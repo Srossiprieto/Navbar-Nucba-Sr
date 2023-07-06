@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/assets/style.css">
     <title>Landing fit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <img src="/img/logo-fitshoot.png" alt="Logo Fitshoot" class="logo">
-        <div class="navbar">
+        <img src="/assets/img/logo-fitshoot.png" alt="Logo Fitshoot" class="logo">
+        <nav class="navbar">
+            <label for="toggle-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="toggle-menu">
             <ul class="navbar-list">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Products</a></li>
+                <li><a href="#">TikTok</a></li>
                 <li><a href="#">Youtube</a></li>
             </ul>
-            <img src="/img/cart-icon-white.png" alt="cart-icon" class="cart-icon">
-        </div>
+            <!-- <img src="/assets/img/cart-icon-white.png" alt="cart-icon" class="cart-icon"> -->
+        </nav>
       
     </header>
     <main>
@@ -34,7 +37,7 @@
                     <a href="#" class="alt-btn">Learn more</a>    
                 </div>  
             </div>
-            <img src="/img/img-motivation-nevergiveup.png" alt="Motivation image" class="hero-img">  
+            <img src="/assets/img/img-motivation-nevergiveup.png" alt="Motivation image" class="hero-img">  
         </section>
         <section id="about">
             <div class="about-info">
@@ -43,9 +46,28 @@
                 </p>
             </div>
         </section>
+        <section id="cards">
+            <div class="cards-style">
+                <div class="cards-x3">
+                    <h3>COACH</h3>
+                    <img src="/assets/img/cbum-recort.png" alt="CBUM COACH" class="img-cbum">
+                    <p>Juan Pedro or better known as "CBUM" is the most recognized trainer in our gym, with whom you can advise and train together! He is a highly trained and passionate professional who is dedicated to providing you with an exceptional training experience. With his technical knowledge, interpersonal skills and personalized approach. And let's not forget his achievements, what are you waiting for to fulfill yours?</p>
+
+                </div>  
+                <div class="cards-x3">
+                    <h3>GYM</h3>
+                    <img src="/assets/img/GYM-CLEAN.jpg" alt="GYM PANORAMIC" class="img-gym">
+                    <p>Our luxurious gym is the perfect place for those seeking a premium fitness experience. We recommend you join our exclusive community and discover a new level of well-being, where luxury and personal care merge to offer you a unique and transformative experience. We are waiting for you to help you achieve your fitness goals in an environment of incomparable luxury!</p>
+                </div>
+                <div class="cards-x3">
+                    <h3>YOGA</h3>
+                    <img src="/assets/img/VIRTUAL-YOGA.jpg" alt="YOGA VIRTUAL" class="img-yoga">
+                    <p>"Flor" Our virtual yoga instructor is a competent and passionate professional who aims to provide our clients with an enriching and transformative experience. Her deep technical knowledge, interpersonal skills, and holistic approach make her an inspiring guide for those looking to practice yoga from the comfort of their own homes. What are you waiting for to join this new premium virtual experience?</p>
+
+                </div>
+            </div>
+        </section>
     </main>
-    
-    
     
     <footer>
      
