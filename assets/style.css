@@ -172,14 +172,24 @@ main {
 }
 
 #cards {
-    padding: 70px 0px;
+    padding: 40px 0px;
     max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 80px;
+    gap: 10px;
 
+}
+.presentation-cards h2 {
+    font-weight: 800;
+    color: var(--text-importante);
+    text-align: center;
+}
+.presentation-cards p {
+    font-weight: 500;
+    color: var(--text-pastel);
+    text-align: center;
 }
 
 .cards-style {
