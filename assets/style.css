@@ -72,6 +72,30 @@ header {
 #toggle-menu {
     display: none;
 }
+.list-mov:hover{
+    color: var(--text-pastel);
+}
+.list-mov{
+    position: relative;
+}
+.list-mov:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--text-nav) ;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+}
+.list-mov:hover:after {
+    width: 100%;
+    right: 0;
+}
+.list-mov:hover{
+    color: var(--text-pastel);
+}
  
 /* .navbar-list li:nth-child(1) a {
     color: var(--text-white);
